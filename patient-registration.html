@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration - Urine Test Strip Reader System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #F6F1E7;
+            color: #2F3E2F;
+        }
+
+        header {
+            background: linear-gradient(135deg, #DCCFB3, #A8B99A);
+            text-align: center;
+            padding: 30px;
+            border-bottom: 4px solid #355E3B;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #2D4F34;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .form-card {
+            background-color: #FFFCF7;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        fieldset {
+            border: 2px solid #A8B99A;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        legend {
+            color: #355E3B;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #BFC8B8;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .inline-group {
+            margin-top: 10px;
+        }
+
+        .inline-group input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .inline-group label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 20px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            background-color: #355E3B;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #4E7A55;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #355E3B;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Patient Registration Form</h1>
+        <p>Urine Test Strip Reader System</p>
+    </header>
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Patient Information</legend>
+
+                    <label for="pname">Patient Name</label>
+                    <input type="text" id="pname" name="pname" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+
+                    <label>Gender</label>
+
+                    <div class="inline-group">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender">
+                        <label for="other">Other</label>
+                    </div>
+
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="pid">Patient ID</label>
+                    <input type="text" id="pid" name="pid">
+
+                    <label for="testdate">Test Date</label>
+                    <input type="date" id="testdate" name="testdate">
+
+                    <label for="doctor">Doctor Name</label>
+                    <input type="text" id="doctor" name="doctor">
+
+                    <label>Symptoms</label>
+
+                    <div class="inline-group">
+                        <input type="checkbox" id="fever">
+                        <label for="fever">Fever</label>
+
+                        <input type="checkbox" id="burning">
+                        <label for="burning">Burning Urination</label>
+
+                        <input type="checkbox" id="fatigue">
+                        <label for="fatigue">Fatigue</label>
+
+                        <input type="checkbox" id="pain">
+                        <label for="pain">Abdominal Pain</label>
+                    </div>
+
+                    <label>Preferred Report Format</label>
+
+                    <div class="inline-group">
+                        <input type="radio" id="pdf" name="report">
+                        <label for="pdf">PDF</label>
+
+                        <input type="radio" id="print" name="report">
+                        <label for="print">Printed Copy</label>
+
+                        <input type="radio" id="emailreport" name="report">
+                        <label for="emailreport">Email</label>
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Urine Test Strip Reader System
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urine Test Strip Reader System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 8px rgba(53, 94, 59, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(53, 94, 59, 0.8);
+            }
+
+            100% {
+                box-shadow: 0 0 8px rgba(53, 94, 59, 0.3);
+            }
+        }
+
+        body {
+            margin: 0;
+            background-color: #F6F1E7;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #2F3E2F;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .welcome-card {
+            background-color: #FFFCF7;
+            padding: 35px;
+            margin-top: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .welcome-card h2 {
+            color: #355E3B;
+            margin-bottom: 15px;
+        }
+
+        .welcome-card p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .portal-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .portal-card {
+            background-color: #FFFCF7;
+            width: 260px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 18px;
+            border: 1px solid #D8D1C2;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+            transition: 0.3s;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .portal-card h3 {
+            color: #355E3B;
+            margin-bottom: 10px;
+        }
+
+        .alert-box {
+            background: linear-gradient(135deg, #355E3B, #5B7A60);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+            border-radius: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            animation: glow 2s infinite;
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: #355E3B;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Task 1: Inline CSS -->
+
+    <header
+        title="AI-enabled healthcare portal for urine test strip analysis and diagnostic reporting"
+        style="
+            background: linear-gradient(135deg,#DCCFB3,#A8B99A);
+            padding: 40px;
+            border-bottom: 5px solid #355E3B;
+            border-radius: 0 0 25px 25px;
+        ">
+
+        <h1
+            style="
+                color:#2D4F34;
+                text-align:center;
+                margin-bottom:10px;
+                font-size:48px;
+                letter-spacing:1px;
+            ">
+            Urine Test Strip Reader System
+        </h1>
+
+        <p
+            style="
+                text-align:center;
+                color:#455A45;
+                font-size:20px;
+                font-style:italic;
+                margin:0;
+            ">
+            AI-Enabled Point-of-Care Diagnostic Healthcare Portal
+        </p>
+
+    </header>
+
+    <div class="container">
+
+        <div class="welcome-card">
+
+            <h2>🏥 Somaiya Healthcare Diagnostic Center</h2>
+
+            <p>
+                <strong>Healthcare Logo:</strong> KJS-HC-03 Healthcare Services
+            </p>
+
+            <p>
+                Welcome to the Urine Test Strip Reader System. This portal
+                assists doctors, laboratory technicians, pathologists and
+                patients by providing structured access to urine test
+                information, diagnostic reports, healthcare awareness
+                resources and patient registration services.
+            </p>
+
+            <p>
+                The system is designed using AI-enabled Point-of-Care
+                Technology to support efficient urine analysis and healthcare
+                decision-making.
+            </p>
+
+        </div>
+
+        <div class="portal-grid">
+
+            <div class="portal-card">
+                <h3>📄 Test Information</h3>
+                <p>View urine test procedures and diagnostic details.</p>
+            </div>
+
+            <div class="portal-card">
+                <h3>🧪 Test Parameters</h3>
+                <p>Explore urine analytes and healthcare stakeholders.</p>
+            </div>
+
+            <div class="portal-card">
+                <h3>📋 Patient Reports</h3>
+                <p>Access diagnostic reports and result summaries.</p>
+            </div>
+
+            <div class="portal-card">
+                <h3>📝 Registration</h3>
+                <p>Register patients for urine diagnostic testing.</p>
+            </div>
+
+        </div>
+
+        <div class="alert-box">
+            ⚕ Health Advisory: Regular urine screening helps in early
+            detection of kidney disorders, urinary tract infections and
+            metabolic conditions.
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Software Version: 1.0</p>
+        <p>© 2026 Urine Test Strip Reader System</p>
+    </footer>
+
+</body>
+
+</html>
+

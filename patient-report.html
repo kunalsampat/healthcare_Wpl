@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Diagnostic Report - Urine Test Strip Reader System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #F6F1E7;
+            color: #2F3E2F;
+        }
+
+        header {
+            background: linear-gradient(135deg, #181816, #A8B99A);
+            text-align: center;
+            padding: 30px;
+            border-bottom: 4px solid #355E3B;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #2D4F34;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .report-card {
+            background-color: #FFFCF7;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #355E3B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 22px;
+            font-weight: bold;
+            color: #355E3B;
+            margin-bottom: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid #BFC8B8;
+            padding: 12px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #A8B99A;
+            color: #1F2F1F;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #F4F7F1;
+        }
+
+        tfoot {
+            background-color: #E6EBDD;
+            font-weight: bold;
+        }
+
+        .normal {
+            color: green;
+            font-weight: bold;
+        }
+
+        .high {
+            color: red;
+            font-weight: bold;
+        }
+
+        .low {
+            color: orange;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #355E3B;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Patient Diagnostic Report</h1>
+        <p>Urine Test Strip Reader System</p>
+    </header>
+
+    <div class="container">
+
+        <div class="report-card">
+
+            <table>
+
+                <caption>
+                    Urine Analysis Report
+                </caption>
+
+                <!-- THEAD -->
+
+                <thead>
+
+                    <tr>
+                        <th rowspan="2">Patient ID</th>
+                        <th rowspan="2">Patient Name</th>
+                        <th colspan="4">Diagnostic Results</th>
+                    </tr>
+
+                    <tr>
+                        <th>Test Parameter</th>
+                        <th>Measured Value</th>
+                        <th>Normal Range</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <!-- TBODY -->
+
+                <tbody>
+
+                    <tr>
+                        <td rowspan="5">P1001</td>
+                        <td rowspan="5">Rahul Sharma</td>
+                        <td>Glucose</td>
+                        <td>120 mg/dL</td>
+                        <td>70 - 110 mg/dL</td>
+                        <td class="high">High</td>
+                    </tr>
+
+                    <tr>
+                        <td>Protein</td>
+                        <td>15 mg/dL</td>
+                        <td>0 - 20 mg/dL</td>
+                        <td class="normal">Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ketones</td>
+                        <td>5 mg/dL</td>
+                        <td>0 - 5 mg/dL</td>
+                        <td class="normal">Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Blood</td>
+                        <td>0.2 mg/dL</td>
+                        <td>0 - 0.3 mg/dL</td>
+                        <td class="normal">Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>pH</td>
+                        <td>5.0</td>
+                        <td>5.5 - 8.0</td>
+                        <td class="low">Low</td>
+                    </tr>
+
+                </tbody>
+
+                <!-- TFOOT -->
+
+                <tfoot>
+
+                    <tr>
+                        <td colspan="6">
+                            Final Observation:
+                            Elevated glucose level detected. Clinical
+                            consultation recommended.
+                        </td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Urine Test Strip Reader System
+    </footer>
+
+</body>
+
+</html>
+

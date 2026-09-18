@@ -1,0 +1,192 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(
+        135deg,
+        #F6F1E7 0%,
+        #F0E8D8 50%,
+        #E9EFE3 100%
+    );
+    color:#2F3E2F;
+    min-height:100vh;
+    line-height:1.7;
+}
+
+
+
+header{
+    background:linear-gradient(
+        135deg,
+        #DCCFB3,
+        #A8B99A
+    );
+    padding:30px;
+    text-align:center;
+    border-bottom:4px solid #355E3B;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+header h1{
+    color:#264D2F;
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#3F5F46;
+    font-size:1.1rem;
+}
+
+
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    color:#355E3B;
+}
+
+h2{
+    margin-bottom:15px;
+    border-bottom:2px solid #A8B99A;
+    padding-bottom:8px;
+}
+
+
+
+.card{
+    background:#FFFCF7;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:25px;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.12);
+}
+
+
+
+a{
+    color:#355E3B;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#6B8A6F;
+}
+
+
+
+button,
+input[type="submit"],
+input[type="reset"]{
+
+    background:#355E3B;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    padding:12px 20px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+
+    background:#4E7A55;
+}
+
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#A8B99A;
+}
+
+th,
+td{
+    padding:12px;
+    border:1px solid #C9D0C4;
+    text-align:center;
+}
+
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:10px;
+
+    border:1px solid #C7CEC2;
+    border-radius:8px;
+
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+
+
+img{
+    max-width:100%;
+    border-radius:12px;
+}
+
+
+
+footer{
+    background:#355E3B;
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+    margin-top:40px;
+
+    font-size:0.95rem;
+}
+
+
+.text-center{
+    text-align:center;
+}
+
+.shadow{
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.10);
+}
+
+.rounded{
+    border-radius:15px;
+}

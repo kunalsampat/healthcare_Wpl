@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urine Test Strip - Urine Test Strip Reader System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #F6F1E7;
+            color: #2F3E2F;
+        }
+
+        header {
+            background: linear-gradient(135deg, #DCCFB3, #A8B99A);
+            text-align: center;
+            padding: 30px;
+            border-bottom: 4px solid #355E3B;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #2D4F34;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #FFFCF7;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 2px solid #A8B99A;
+        }
+
+        .note {
+            margin-top: 20px;
+            background-color: #EEF3EA;
+            padding: 15px;
+            border-left: 5px solid #355E3B;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #355E3B;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Interactive Urine Test Strip</h1>
+        <p>Urine Test Strip Reader System</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Urine Test Strip Analysis</h2>
+
+            <p>
+                Click on any reagent pad to view information
+                about the corresponding analyte.
+            </p>
+
+            <!-- Replace urine-strip.jpg with your image file -->
+
+            <img src="assets/urine-strip.jpg"
+                 alt="Urine Test Strip with Reagent Pads"
+                 usemap="#urinestrip">
+
+            <!-- Image Map -->
+
+            <map name="urinestrip">
+
+                <!-- Glucose -->
+                <area shape="rect"
+                      coords="20,20,80,80"
+                      href="glucose.html"
+                      alt="Glucose">
+
+                <!-- Protein -->
+                <area shape="rect"
+                      coords="90,20,150,80"
+                      href="protein.html"
+                      alt="Protein">
+
+                <!-- Ketones -->
+                <area shape="rect"
+                      coords="160,20,220,80"
+                      href="ketones.html"
+                      alt="Ketones">
+
+                <!-- Blood -->
+                <area shape="rect"
+                      coords="230,20,290,80"
+                      href="blood.html"
+                      alt="Blood">
+
+                <!-- Bilirubin -->
+                <area shape="rect"
+                      coords="300,20,360,80"
+                      href="bilirubin.html"
+                      alt="Bilirubin">
+
+                <!-- Nitrite -->
+                <area shape="rect"
+                      coords="370,20,430,80"
+                      href="nitrite.html"
+                      alt="Nitrite">
+
+                <!-- Leukocytes -->
+                <area shape="rect"
+                      coords="440,20,500,80"
+                      href="leukocytes.html"
+                      alt="Leukocytes">
+
+                <!-- pH -->
+                <area shape="rect"
+                      coords="510,20,570,80"
+                      href="ph.html"
+                      alt="pH">
+
+                <!-- Specific Gravity -->
+                <area shape="rect"
+                      coords="580,20,640,80"
+                      href="specific-gravity.html"
+                      alt="Specific Gravity">
+
+                <!-- Urobilinogen -->
+                <area shape="rect"
+                      coords="650,20,710,80"
+                      href="urobilinogen.html"
+                      alt="Urobilinogen">
+
+            </map>
+
+            <div class="note">
+                <strong>Note:</strong> The coordinates used above are sample
+                values. Adjust them according to the actual dimensions of
+                your urine-strip image.
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Urine Test Strip Reader System
+    </footer>
+
+</body>
+
+</html>
